@@ -3,13 +3,22 @@ import json
 import os
 import glob
 import numpy as np
+import random
 
 JSON_FOLDER = r""
 OUTPUT_BASE = r""
 
-MOTION_THRESH = 5.0
+MOTION_THRESH = 3.0
 HASH_DIST_THRESH = 5
 USE_HASH_FILTER = False
+USE_FALSE_DIFF_FILTER = True
+FALSE_DIFF_THRESH = 25.0
+
+LABEL_WEIGHTS = {
+    "false": 0.8,
+    "true": 1.0,
+    "unknown": 1.0
+}
 
 def avg_hash(img_bgr, size=8):
     g = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2GRAY)
@@ -39,14 +48,8 @@ for json_path in json_files:
 
     video_path = data["video_path"]
     segments = data["segments"]
-    label_map = {int(k): v.lower() for k, v in data["label_map"].items()}
-
-    # ROI가 여러 개일 수도 있음
-    if "rois" in data:
-        rois = data["rois"]
-    else:
-        rois = [data["roi"]]  # 단일 ROI를 리스트로 감싸기
-
+    label_map = {str(k): v.lower() for k, v in data["label_map"].items()}
+    rois = data["rois"] if "rois" in data else [data["roi"]]
     video_name = os.path.splitext(os.path.basename(video_path))[0]
     output_video_dir = os.path.join(OUTPUT_BASE, video_name)
     os.makedirs(output_video_dir, exist_ok=True)
@@ -56,7 +59,6 @@ for json_path in json_files:
         subdir = os.path.basename(os.path.dirname(video_path))
         corrected_path = os.path.join(JSON_FOLDER, subdir, video_filename)
         if os.path.exists(corrected_path):
-            print(f"경로 교정됨: {video_path} → {corrected_path}")
             video_path = corrected_path
         else:
             print(f"비디오를 찾을 수 없음: {corrected_path}")
@@ -71,24 +73,24 @@ for json_path in json_files:
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     print(f"    총 {total_frames}프레임")
 
-    # ROI별 처리
     for roi_idx, roi in enumerate(rois):
         x, y, w, h = roi
         roi_dir = os.path.join(output_video_dir, f"ROI_{roi_idx}")
         os.makedirs(roi_dir, exist_ok=True)
-
-        # 라벨 폴더 생성
-        for lbl_name in {"false", "true", "unknown"}:
-            os.makedirs(os.path.join(roi_dir, lbl_name), exist_ok=True)
+        for lbl in {"false", "true", "unknown"}:
+            os.makedirs(os.path.join(roi_dir, lbl), exist_ok=True)
 
         prev_roi_gray = None
         prev_label = None
         saved_count = 0
         label_count = {"false": 0, "true": 0, "unknown": 0}
+        label_total = {"false": 0, "true": 0, "unknown": 0}
         recent_hashes = []
+        label_roi_mean = {"true": None, "unknown": None}
 
-        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)  # 비디오 처음으로 되감기
+        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
         frame_idx = 0
+
         while True:
             ret, frame = cap.read()
             if not ret:
@@ -97,23 +99,44 @@ for json_path in json_files:
             current_label = None
             for seg in segments:
                 if seg["start_frame"] <= frame_idx <= seg["end_frame"]:
-                    lbl_id = int(seg.get("label", 0))
+                    lbl_id = str(seg.get("label", "0"))
                     current_label = label_map.get(lbl_id, "unknown")
                     break
+
             if current_label is None:
                 frame_idx += 1
                 continue
+
+            label_total[current_label] += 1
 
             roi_frame = frame[y:y+h, x:x+w]
             roi_gray = cv2.cvtColor(roi_frame, cv2.COLOR_BGR2GRAY)
 
             save_this = False
+            diff_val = 0.0
+
             if current_label != prev_label:
                 save_this = True
             elif prev_roi_gray is not None:
-                diff = np.mean(cv2.absdiff(roi_gray, prev_roi_gray))
-                if diff >= MOTION_THRESH:
+                diff_val = np.mean(cv2.absdiff(roi_gray, prev_roi_gray))
+                if diff_val >= MOTION_THRESH:
                     save_this = True
+
+            if current_label in {"true", "unknown"}:
+                if label_roi_mean[current_label] is None:
+                    label_roi_mean[current_label] = roi_gray.astype(np.float32)
+                else:
+                    label_roi_mean[current_label] = (
+                        0.9 * label_roi_mean[current_label] + 0.1 * roi_gray.astype(np.float32)
+                    )
+
+            if USE_FALSE_DIFF_FILTER and current_label == "false":
+                if label_roi_mean["true"] is not None and label_roi_mean["unknown"] is not None:
+                    diff_true = np.mean(cv2.absdiff(roi_gray, label_roi_mean["true"].astype(np.uint8)))
+                    diff_unknown = np.mean(cv2.absdiff(roi_gray, label_roi_mean["unknown"].astype(np.uint8)))
+                    avg_diff = (diff_true + diff_unknown) / 2
+                    if avg_diff < FALSE_DIFF_THRESH:
+                        save_this = False
 
             if save_this and USE_HASH_FILTER:
                 ah = avg_hash(roi_frame)
@@ -123,6 +146,10 @@ for json_path in json_files:
                     recent_hashes.append(ah)
                     if len(recent_hashes) > 5000:
                         recent_hashes = recent_hashes[-2000:]
+
+            if save_this and current_label == "false":
+                if random.random() > LABEL_WEIGHTS["false"]:
+                    save_this = False
 
             if save_this:
                 save_dir = os.path.join(roi_dir, current_label)
@@ -138,13 +165,12 @@ for json_path in json_files:
             prev_roi_gray = roi_gray
             frame_idx += 1
 
-        print(f"    ROI_{roi_idx} 저장 완료 ({saved_count}장)")
-        for lbl, cnt in label_count.items():
-            print(f"        - {lbl:8s}: {cnt:4d}장")
-
+        print(f"\n[ROI_{roi_idx}] 저장 요약:")
+        for lbl in ["false", "true", "unknown"]:
+            print(f"    - {lbl:8s}: {label_count[lbl]:4d}장 (원본: {label_total[lbl]:4d}프레임)")
+        total_saved += saved_count
         for lbl in label_count:
             total_label_count[lbl] += label_count[lbl]
-        total_saved += saved_count
 
     cap.release()
 
