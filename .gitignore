@@ -1,0 +1,15 @@
+.venv
+
+real/**/*.mp4
+real/**/*.avi
+real/**/*.webm
+real/*-output
+
+simulation/**/*.mp4
+simulation/**/*.avi
+simulation/**/*.webm
+simulation/output
+
+real/05_06
+
+# confusion_*.pngs

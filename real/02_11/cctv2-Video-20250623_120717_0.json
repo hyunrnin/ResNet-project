@@ -1,0 +1,316 @@
+{
+  "video_path": "C:/2025-2 학부연구/real/02_11/cctv2-Video-20250623_120717.mp4",
+  "roi": [
+    1250,
+    330,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 2448,
+      "label": 0
+    },
+    {
+      "start_frame": 2449,
+      "end_frame": 2594,
+      "label": 2
+    },
+    {
+      "start_frame": 2595,
+      "end_frame": 2784,
+      "label": 1
+    },
+    {
+      "start_frame": 2785,
+      "end_frame": 2893,
+      "label": 2
+    },
+    {
+      "start_frame": 2894,
+      "end_frame": 3110,
+      "label": 0
+    },
+    {
+      "start_frame": 3111,
+      "end_frame": 3236,
+      "label": 2
+    },
+    {
+      "start_frame": 3237,
+      "end_frame": 3480,
+      "label": 1
+    },
+    {
+      "start_frame": 3481,
+      "end_frame": 3568,
+      "label": 2
+    },
+    {
+      "start_frame": 3569,
+      "end_frame": 3582,
+      "label": 1
+    },
+    {
+      "start_frame": 3583,
+      "end_frame": 3633,
+      "label": 2
+    },
+    {
+      "start_frame": 3634,
+      "end_frame": 3655,
+      "label": 1
+    },
+    {
+      "start_frame": 3656,
+      "end_frame": 3741,
+      "label": 2
+    },
+    {
+      "start_frame": 3742,
+      "end_frame": 4030,
+      "label": 1
+    },
+    {
+      "start_frame": 4031,
+      "end_frame": 4157,
+      "label": 2
+    },
+    {
+      "start_frame": 4158,
+      "end_frame": 4926,
+      "label": 1
+    },
+    {
+      "start_frame": 4927,
+      "end_frame": 4943,
+      "label": 2
+    },
+    {
+      "start_frame": 4944,
+      "end_frame": 6049,
+      "label": 1
+    },
+    {
+      "start_frame": 6050,
+      "end_frame": 6107,
+      "label": 2
+    },
+    {
+      "start_frame": 6108,
+      "end_frame": 6135,
+      "label": 1
+    },
+    {
+      "start_frame": 6136,
+      "end_frame": 6173,
+      "label": 2
+    },
+    {
+      "start_frame": 6174,
+      "end_frame": 7587,
+      "label": 1
+    },
+    {
+      "start_frame": 7588,
+      "end_frame": 7723,
+      "label": 2
+    },
+    {
+      "start_frame": 7724,
+      "end_frame": 14803,
+      "label": 1
+    },
+    {
+      "start_frame": 14804,
+      "end_frame": 14940,
+      "label": 2
+    },
+    {
+      "start_frame": 14941,
+      "end_frame": 14951,
+      "label": 1
+    },
+    {
+      "start_frame": 14952,
+      "end_frame": 15022,
+      "label": 2
+    },
+    {
+      "start_frame": 15023,
+      "end_frame": 29479,
+      "label": 1
+    },
+    {
+      "start_frame": 29480,
+      "end_frame": 29529,
+      "label": 2
+    },
+    {
+      "start_frame": 29530,
+      "end_frame": 29543,
+      "label": 1
+    },
+    {
+      "start_frame": 29544,
+      "end_frame": 29555,
+      "label": 2
+    },
+    {
+      "start_frame": 29556,
+      "end_frame": 30642,
+      "label": 1
+    },
+    {
+      "start_frame": 30643,
+      "end_frame": 30831,
+      "label": 2
+    },
+    {
+      "start_frame": 30832,
+      "end_frame": 31161,
+      "label": 1
+    },
+    {
+      "start_frame": 31162,
+      "end_frame": 31203,
+      "label": 2
+    },
+    {
+      "start_frame": 31204,
+      "end_frame": 31218,
+      "label": 1
+    },
+    {
+      "start_frame": 31219,
+      "end_frame": 31259,
+      "label": 2
+    },
+    {
+      "start_frame": 31260,
+      "end_frame": 31277,
+      "label": 1
+    },
+    {
+      "start_frame": 31278,
+      "end_frame": 31366,
+      "label": 2
+    },
+    {
+      "start_frame": 31367,
+      "end_frame": 31456,
+      "label": 1
+    },
+    {
+      "start_frame": 31457,
+      "end_frame": 31729,
+      "label": 2
+    },
+    {
+      "start_frame": 31730,
+      "end_frame": 31835,
+      "label": 1
+    },
+    {
+      "start_frame": 31836,
+      "end_frame": 32158,
+      "label": 2
+    },
+    {
+      "start_frame": 32159,
+      "end_frame": 32306,
+      "label": 1
+    },
+    {
+      "start_frame": 32307,
+      "end_frame": 32334,
+      "label": 2
+    },
+    {
+      "start_frame": 32335,
+      "end_frame": 32392,
+      "label": 1
+    },
+    {
+      "start_frame": 32393,
+      "end_frame": 32432,
+      "label": 2
+    },
+    {
+      "start_frame": 32433,
+      "end_frame": 35277,
+      "label": 1
+    },
+    {
+      "start_frame": 35278,
+      "end_frame": 35437,
+      "label": 2
+    },
+    {
+      "start_frame": 35438,
+      "end_frame": 36496,
+      "label": 1
+    },
+    {
+      "start_frame": 36497,
+      "end_frame": 36573,
+      "label": 2
+    },
+    {
+      "start_frame": 36574,
+      "end_frame": 36732,
+      "label": 1
+    },
+    {
+      "start_frame": 36733,
+      "end_frame": 36790,
+      "label": 2
+    },
+    {
+      "start_frame": 36791,
+      "end_frame": 37659,
+      "label": 1
+    },
+    {
+      "start_frame": 37660,
+      "end_frame": 37729,
+      "label": 2
+    },
+    {
+      "start_frame": 37730,
+      "end_frame": 38119,
+      "label": 1
+    },
+    {
+      "start_frame": 38120,
+      "end_frame": 38192,
+      "label": 0
+    },
+    {
+      "start_frame": 38193,
+      "end_frame": 38204,
+      "label": 2
+    },
+    {
+      "start_frame": 38205,
+      "end_frame": 38818,
+      "label": 0
+    },
+    {
+      "start_frame": 38819,
+      "end_frame": 38886,
+      "label": 2
+    },
+    {
+      "start_frame": 38887,
+      "end_frame": 47396,
+      "label": 0
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "video_path": "C:/2025-2 학부연구/real/02_11/cctv2-Video-20250623_122126.mp4",
+  "roi": [
+    1250,
+    330,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 258,
+      "label": 0
+    },
+    {
+      "start_frame": 259,
+      "end_frame": 305,
+      "label": 2
+    },
+    {
+      "start_frame": 306,
+      "end_frame": 322,
+      "label": 0
+    },
+    {
+      "start_frame": 323,
+      "end_frame": 598,
+      "label": 1
+    },
+    {
+      "start_frame": 599,
+      "end_frame": 685,
+      "label": 2
+    },
+    {
+      "start_frame": 686,
+      "end_frame": 757,
+      "label": 1
+    },
+    {
+      "start_frame": 758,
+      "end_frame": 804,
+      "label": 2
+    },
+    {
+      "start_frame": 805,
+      "end_frame": 1917,
+      "label": 1
+    },
+    {
+      "start_frame": 1918,
+      "end_frame": 1948,
+      "label": 2
+    },
+    {
+      "start_frame": 1949,
+      "end_frame": 1973,
+      "label": 1
+    },
+    {
+      "start_frame": 1974,
+      "end_frame": 2026,
+      "label": 2
+    },
+    {
+      "start_frame": 2027,
+      "end_frame": 5595,
+      "label": 1
+    },
+    {
+      "start_frame": 5596,
+      "end_frame": 5723,
+      "label": 2
+    },
+    {
+      "start_frame": 5724,
+      "end_frame": 18494,
+      "label": 1
+    },
+    {
+      "start_frame": 18495,
+      "end_frame": 18515,
+      "label": 2
+    },
+    {
+      "start_frame": 18516,
+      "end_frame": 18716,
+      "label": 1
+    },
+    {
+      "start_frame": 18717,
+      "end_frame": 18754,
+      "label": 2
+    },
+    {
+      "start_frame": 18755,
+      "end_frame": 21804,
+      "label": 1
+    },
+    {
+      "start_frame": 21805,
+      "end_frame": 22001,
+      "label": 2
+    },
+    {
+      "start_frame": 22002,
+      "end_frame": 23559,
+      "label": 0
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "video_path": "C:/Users/user/Desktop/sos/real\\02_10\\cctv2-Video-20250623_131629.mp4",
+  "roi": [
+    1000,
+    0,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 722,
+      "label": 1
+    },
+    {
+      "start_frame": 723,
+      "end_frame": 834,
+      "label": 2
+    },
+    {
+      "start_frame": 835,
+      "end_frame": 896,
+      "label": 1
+    },
+    {
+      "start_frame": 897,
+      "end_frame": 1028,
+      "label": 2
+    },
+    {
+      "start_frame": 1029,
+      "end_frame": 1734,
+      "label": 1
+    },
+    {
+      "start_frame": 1735,
+      "end_frame": 2108,
+      "label": 2
+    },
+    {
+      "start_frame": 2109,
+      "end_frame": 3469,
+      "label": 1
+    },
+    {
+      "start_frame": 3470,
+      "end_frame": 3511,
+      "label": 2
+    },
+    {
+      "start_frame": 3512,
+      "end_frame": 3707,
+      "label": 1
+    },
+    {
+      "start_frame": 3708,
+      "end_frame": 3816,
+      "label": 2
+    },
+    {
+      "start_frame": 3817,
+      "end_frame": 3962,
+      "label": 1
+    },
+    {
+      "start_frame": 3963,
+      "end_frame": 4349,
+      "label": 2
+    },
+    {
+      "start_frame": 4350,
+      "end_frame": 5050,
+      "label": 1
+    },
+    {
+      "start_frame": 5051,
+      "end_frame": 5069,
+      "label": 2
+    },
+    {
+      "start_frame": 5070,
+      "end_frame": 5244,
+      "label": 1
+    },
+    {
+      "start_frame": 5245,
+      "end_frame": 5328,
+      "label": 2
+    },
+    {
+      "start_frame": 5329,
+      "end_frame": 5344,
+      "label": 1
+    },
+    {
+      "start_frame": 5345,
+      "end_frame": 5345,
+      "label": 2
+    },
+    {
+      "start_frame": 5346,
+      "end_frame": 5346,
+      "label": 1
+    },
+    {
+      "start_frame": 5347,
+      "end_frame": 5385,
+      "label": 2
+    },
+    {
+      "start_frame": 5386,
+      "end_frame": 6353,
+      "label": 1
+    },
+    {
+      "start_frame": 6354,
+      "end_frame": 6842,
+      "label": 2
+    },
+    {
+      "start_frame": 6843,
+      "end_frame": 7292,
+      "label": 1
+    },
+    {
+      "start_frame": 7293,
+      "end_frame": 7386,
+      "label": 2
+    },
+    {
+      "start_frame": 7387,
+      "end_frame": 7436,
+      "label": 1
+    },
+    {
+      "start_frame": 7437,
+      "end_frame": 7519,
+      "label": 2
+    },
+    {
+      "start_frame": 7520,
+      "end_frame": 7612,
+      "label": 1
+    },
+    {
+      "start_frame": 7613,
+      "end_frame": 7809,
+      "label": 2
+    },
+    {
+      "start_frame": 7810,
+      "end_frame": 8228,
+      "label": 1
+    },
+    {
+      "start_frame": 8229,
+      "end_frame": 8313,
+      "label": 2
+    },
+    {
+      "start_frame": 8314,
+      "end_frame": 8612,
+      "label": 1
+    },
+    {
+      "start_frame": 8613,
+      "end_frame": 8748,
+      "label": 2
+    },
+    {
+      "start_frame": 8749,
+      "end_frame": 8923,
+      "label": 1
+    }
+  ]
+}

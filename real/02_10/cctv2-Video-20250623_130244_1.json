@@ -1,0 +1,71 @@
+{
+  "video_path": "C:/Users/user/Desktop/sos/real\\02_10\\cctv2-Video-20250623_130244.mp4",
+  "roi": [
+    1000,
+    0,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 3536,
+      "label": 0
+    },
+    {
+      "start_frame": 3537,
+      "end_frame": 5430,
+      "label": 1
+    },
+    {
+      "start_frame": 5431,
+      "end_frame": 5441,
+      "label": 2
+    },
+    {
+      "start_frame": 5442,
+      "end_frame": 14238,
+      "label": 1
+    },
+    {
+      "start_frame": 14239,
+      "end_frame": 14257,
+      "label": 2
+    },
+    {
+      "start_frame": 14258,
+      "end_frame": 14530,
+      "label": 1
+    },
+    {
+      "start_frame": 14531,
+      "end_frame": 14535,
+      "label": 2
+    },
+    {
+      "start_frame": 14536,
+      "end_frame": 18024,
+      "label": 1
+    },
+    {
+      "start_frame": 18025,
+      "end_frame": 18070,
+      "label": 2
+    },
+    {
+      "start_frame": 18071,
+      "end_frame": 19597,
+      "label": 1
+    },
+    {
+      "start_frame": 19598,
+      "end_frame": 26341,
+      "label": 0
+    }
+  ]
+}

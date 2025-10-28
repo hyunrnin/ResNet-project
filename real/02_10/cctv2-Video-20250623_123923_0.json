@@ -1,0 +1,21 @@
+{
+  "video_path": "C:/2025-2 \ud559\ubd80\uc5f0\uad6c/real\\02_10\\cctv2-Video-20250623_123923.mp4",
+  "roi": [
+    780,
+    0,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 28881,
+      "label": 0
+    }
+  ]
+}

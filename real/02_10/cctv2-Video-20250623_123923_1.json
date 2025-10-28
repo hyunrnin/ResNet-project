@@ -1,0 +1,126 @@
+{
+  "video_path": "C:/Users/user/Desktop/sos/real\\02_10\\cctv2-Video-20250623_123923.mp4",
+  "roi": [
+    1000,
+    0,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 3639,
+      "label": 0
+    },
+    {
+      "start_frame": 3640,
+      "end_frame": 3678,
+      "label": 2
+    },
+    {
+      "start_frame": 3679,
+      "end_frame": 5624,
+      "label": 0
+    },
+    {
+      "start_frame": 5625,
+      "end_frame": 5707,
+      "label": 2
+    },
+    {
+      "start_frame": 5708,
+      "end_frame": 5847,
+      "label": 1
+    },
+    {
+      "start_frame": 5848,
+      "end_frame": 5861,
+      "label": 2
+    },
+    {
+      "start_frame": 5862,
+      "end_frame": 6097,
+      "label": 1
+    },
+    {
+      "start_frame": 6098,
+      "end_frame": 6170,
+      "label": 2
+    },
+    {
+      "start_frame": 6171,
+      "end_frame": 6572,
+      "label": 1
+    },
+    {
+      "start_frame": 6573,
+      "end_frame": 6586,
+      "label": 2
+    },
+    {
+      "start_frame": 6587,
+      "end_frame": 7460,
+      "label": 1
+    },
+    {
+      "start_frame": 7461,
+      "end_frame": 7528,
+      "label": 2
+    },
+    {
+      "start_frame": 7529,
+      "end_frame": 16515,
+      "label": 1
+    },
+    {
+      "start_frame": 16516,
+      "end_frame": 16524,
+      "label": 2
+    },
+    {
+      "start_frame": 16525,
+      "end_frame": 16592,
+      "label": 1
+    },
+    {
+      "start_frame": 16593,
+      "end_frame": 16629,
+      "label": 2
+    },
+    {
+      "start_frame": 16630,
+      "end_frame": 25654,
+      "label": 1
+    },
+    {
+      "start_frame": 25655,
+      "end_frame": 26339,
+      "label": 0
+    },
+    {
+      "start_frame": 26340,
+      "end_frame": 26377,
+      "label": 2
+    },
+    {
+      "start_frame": 26378,
+      "end_frame": 26486,
+      "label": 0
+    },
+    {
+      "start_frame": 26487,
+      "end_frame": 26591,
+      "label": 2
+    },
+    {
+      "start_frame": 26592,
+      "end_frame": 28881,
+      "label": 0
+    }
+  ]
+}

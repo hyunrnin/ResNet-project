@@ -1,0 +1,21 @@
+{
+  "video_path": "C:/Users/user/Desktop/sos/real\\02_10\\cctv2-Video-20250623_131312.mp4",
+  "roi": [
+    780,
+    0,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 7312,
+      "label": 0
+    }
+  ]
+}

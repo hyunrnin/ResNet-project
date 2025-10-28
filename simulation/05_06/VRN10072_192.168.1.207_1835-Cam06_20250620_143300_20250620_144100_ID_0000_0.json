@@ -1,0 +1,111 @@
+{
+  "video_path": "C:/2025-2 \ud559\uc0dd\uc5f0\uad6c/simulation\\05_06\\VRN10072_192.168.1.207_1835-Cam06_20250620_143300_20250620_144100_ID_0000.avi",
+  "roi": [
+    1200,
+    970,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 8274,
+      "label": 0
+    },
+    {
+      "start_frame": 8275,
+      "end_frame": 8300,
+      "label": 2
+    },
+    {
+      "start_frame": 8301,
+      "end_frame": 8797,
+      "label": 0
+    },
+    {
+      "start_frame": 8798,
+      "end_frame": 8985,
+      "label": 2
+    },
+    {
+      "start_frame": 8986,
+      "end_frame": 9216,
+      "label": 0
+    },
+    {
+      "start_frame": 9217,
+      "end_frame": 9285,
+      "label": 2
+    },
+    {
+      "start_frame": 9286,
+      "end_frame": 9578,
+      "label": 0
+    },
+    {
+      "start_frame": 9579,
+      "end_frame": 9607,
+      "label": 2
+    },
+    {
+      "start_frame": 9608,
+      "end_frame": 10045,
+      "label": 0
+    },
+    {
+      "start_frame": 10046,
+      "end_frame": 10082,
+      "label": 2
+    },
+    {
+      "start_frame": 10083,
+      "end_frame": 10201,
+      "label": 0
+    },
+    {
+      "start_frame": 10202,
+      "end_frame": 10286,
+      "label": 2
+    },
+    {
+      "start_frame": 10287,
+      "end_frame": 10496,
+      "label": 0
+    },
+    {
+      "start_frame": 10497,
+      "end_frame": 10638,
+      "label": 2
+    },
+    {
+      "start_frame": 10639,
+      "end_frame": 10890,
+      "label": 0
+    },
+    {
+      "start_frame": 10891,
+      "end_frame": 10948,
+      "label": 2
+    },
+    {
+      "start_frame": 10949,
+      "end_frame": 11161,
+      "label": 0
+    },
+    {
+      "start_frame": 11162,
+      "end_frame": 11181,
+      "label": 2
+    },
+    {
+      "start_frame": 11182,
+      "end_frame": 14094,
+      "label": 0
+    }
+  ]
+}

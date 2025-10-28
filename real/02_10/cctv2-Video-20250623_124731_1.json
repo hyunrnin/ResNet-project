@@ -1,0 +1,271 @@
+{
+  "video_path": "C:/Users/user/Desktop/sos/real\\02_10\\cctv2-Video-20250623_124731.mp4",
+  "roi": [
+    1000,
+    0,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1244,
+      "label": 0
+    },
+    {
+      "start_frame": 1245,
+      "end_frame": 8552,
+      "label": 1
+    },
+    {
+      "start_frame": 8553,
+      "end_frame": 8749,
+      "label": 2
+    },
+    {
+      "start_frame": 8750,
+      "end_frame": 8773,
+      "label": 1
+    },
+    {
+      "start_frame": 8774,
+      "end_frame": 8829,
+      "label": 2
+    },
+    {
+      "start_frame": 8830,
+      "end_frame": 8833,
+      "label": 1
+    },
+    {
+      "start_frame": 8834,
+      "end_frame": 8905,
+      "label": 2
+    },
+    {
+      "start_frame": 8906,
+      "end_frame": 10926,
+      "label": 1
+    },
+    {
+      "start_frame": 10927,
+      "end_frame": 11067,
+      "label": 2
+    },
+    {
+      "start_frame": 11068,
+      "end_frame": 11335,
+      "label": 1
+    },
+    {
+      "start_frame": 11336,
+      "end_frame": 11412,
+      "label": 2
+    },
+    {
+      "start_frame": 11413,
+      "end_frame": 12413,
+      "label": 1
+    },
+    {
+      "start_frame": 12414,
+      "end_frame": 12527,
+      "label": 2
+    },
+    {
+      "start_frame": 12528,
+      "end_frame": 16329,
+      "label": 1
+    },
+    {
+      "start_frame": 16330,
+      "end_frame": 16446,
+      "label": 2
+    },
+    {
+      "start_frame": 16447,
+      "end_frame": 16533,
+      "label": 1
+    },
+    {
+      "start_frame": 16534,
+      "end_frame": 16580,
+      "label": 2
+    },
+    {
+      "start_frame": 16581,
+      "end_frame": 17249,
+      "label": 1
+    },
+    {
+      "start_frame": 17250,
+      "end_frame": 17314,
+      "label": 2
+    },
+    {
+      "start_frame": 17315,
+      "end_frame": 22470,
+      "label": 1
+    },
+    {
+      "start_frame": 22471,
+      "end_frame": 22492,
+      "label": 2
+    },
+    {
+      "start_frame": 22493,
+      "end_frame": 22502,
+      "label": 1
+    },
+    {
+      "start_frame": 22503,
+      "end_frame": 22820,
+      "label": 2
+    },
+    {
+      "start_frame": 22821,
+      "end_frame": 26973,
+      "label": 1
+    },
+    {
+      "start_frame": 26974,
+      "end_frame": 26984,
+      "label": 2
+    },
+    {
+      "start_frame": 26985,
+      "end_frame": 27874,
+      "label": 1
+    },
+    {
+      "start_frame": 27875,
+      "end_frame": 27913,
+      "label": 2
+    },
+    {
+      "start_frame": 27914,
+      "end_frame": 32161,
+      "label": 1
+    },
+    {
+      "start_frame": 32162,
+      "end_frame": 32196,
+      "label": 2
+    },
+    {
+      "start_frame": 32197,
+      "end_frame": 32286,
+      "label": 1
+    },
+    {
+      "start_frame": 32287,
+      "end_frame": 32485,
+      "label": 2
+    },
+    {
+      "start_frame": 32486,
+      "end_frame": 32514,
+      "label": 1
+    },
+    {
+      "start_frame": 32515,
+      "end_frame": 32616,
+      "label": 2
+    },
+    {
+      "start_frame": 32617,
+      "end_frame": 32635,
+      "label": 1
+    },
+    {
+      "start_frame": 32636,
+      "end_frame": 32674,
+      "label": 2
+    },
+    {
+      "start_frame": 32675,
+      "end_frame": 33378,
+      "label": 1
+    },
+    {
+      "start_frame": 33379,
+      "end_frame": 34446,
+      "label": 2
+    },
+    {
+      "start_frame": 34447,
+      "end_frame": 35090,
+      "label": 1
+    },
+    {
+      "start_frame": 35091,
+      "end_frame": 35321,
+      "label": 2
+    },
+    {
+      "start_frame": 35322,
+      "end_frame": 36732,
+      "label": 1
+    },
+    {
+      "start_frame": 36733,
+      "end_frame": 37921,
+      "label": 2
+    },
+    {
+      "start_frame": 37922,
+      "end_frame": 37979,
+      "label": 1
+    },
+    {
+      "start_frame": 37980,
+      "end_frame": 37997,
+      "label": 2
+    },
+    {
+      "start_frame": 37998,
+      "end_frame": 38160,
+      "label": 1
+    },
+    {
+      "start_frame": 38161,
+      "end_frame": 39136,
+      "label": 2
+    },
+    {
+      "start_frame": 39137,
+      "end_frame": 42006,
+      "label": 1
+    },
+    {
+      "start_frame": 42007,
+      "end_frame": 42054,
+      "label": 2
+    },
+    {
+      "start_frame": 42055,
+      "end_frame": 42138,
+      "label": 1
+    },
+    {
+      "start_frame": 42139,
+      "end_frame": 42150,
+      "label": 2
+    },
+    {
+      "start_frame": 42151,
+      "end_frame": 43269,
+      "label": 1
+    },
+    {
+      "start_frame": 43270,
+      "end_frame": 46462,
+      "label": 0
+    }
+  ]
+}
