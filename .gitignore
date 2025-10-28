@@ -4,12 +4,35 @@ real/**/*.mp4
 real/**/*.avi
 real/**/*.webm
 real/*-output
+real/**/*.png
+real/**/*.jpg
 
 simulation/**/*.mp4
 simulation/**/*.avi
 simulation/**/*.webm
 simulation/output
 
-real/05_06
+real/02_10-imgset
+real/02_10(test.py)
 
+
+
+# data/real/**/*.mp4
+# data/real/**/*.avi
+# data/real/**/*.webm
+# data/real/*-output
+# data/real/**/*.png
+# data/real/**/*.jpg
+
+# data/simulation/**/*.mp4
+# data/simulation/**/*.avi
+# data/simulation/**/*.webm
+# data/simulation/output
+
+# data/real/05_06
+# data/real/02_10(test.py)
+# data/real/02_10-imgset
 # confusion_*.pngs
+
+classification_results.json
+분류결과
