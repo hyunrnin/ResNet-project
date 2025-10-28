@@ -1,8 +1,8 @@
 {
-  "video_path": "data/real/02_11/cctv2-Video-20250623_110717_01.mp4",
+  "video_path": "data/real/02_10/cctv2-Video-20250623_140612.mp4",
   "roi": [
-    1250,
-    330,
+    1000,
+    0,
     128,
     128
   ],
@@ -14,8 +14,8 @@
   "segments": [
     {
       "start_frame": 0,
-      "end_frame": 47141,
-      "label": 0
+      "end_frame": 354,
+      "label": 1
     }
   ]
 }

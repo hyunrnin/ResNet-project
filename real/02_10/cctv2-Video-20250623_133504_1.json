@@ -1,0 +1,121 @@
+{
+  "video_path": "data/real/02_10/cctv2-Video-20250623_133504.mp4",
+  "roi": [
+    1000,
+    0,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1009,
+      "label": 1
+    },
+    {
+      "start_frame": 1010,
+      "end_frame": 1058,
+      "label": 2
+    },
+    {
+      "start_frame": 1059,
+      "end_frame": 1252,
+      "label": 1
+    },
+    {
+      "start_frame": 1253,
+      "end_frame": 1260,
+      "label": 2
+    },
+    {
+      "start_frame": 1261,
+      "end_frame": 1276,
+      "label": 1
+    },
+    {
+      "start_frame": 1277,
+      "end_frame": 1582,
+      "label": 2
+    },
+    {
+      "start_frame": 1583,
+      "end_frame": 2765,
+      "label": 1
+    },
+    {
+      "start_frame": 2766,
+      "end_frame": 2856,
+      "label": 2
+    },
+    {
+      "start_frame": 2857,
+      "end_frame": 3054,
+      "label": 1
+    },
+    {
+      "start_frame": 3055,
+      "end_frame": 3096,
+      "label": 2
+    },
+    {
+      "start_frame": 3097,
+      "end_frame": 4311,
+      "label": 1
+    },
+    {
+      "start_frame": 4312,
+      "end_frame": 4350,
+      "label": 2
+    },
+    {
+      "start_frame": 4351,
+      "end_frame": 4725,
+      "label": 1
+    },
+    {
+      "start_frame": 4726,
+      "end_frame": 4731,
+      "label": 2
+    },
+    {
+      "start_frame": 4732,
+      "end_frame": 4760,
+      "label": 1
+    },
+    {
+      "start_frame": 4761,
+      "end_frame": 4789,
+      "label": 2
+    },
+    {
+      "start_frame": 4790,
+      "end_frame": 5311,
+      "label": 1
+    },
+    {
+      "start_frame": 5312,
+      "end_frame": 5334,
+      "label": 2
+    },
+    {
+      "start_frame": 5335,
+      "end_frame": 6584,
+      "label": 1
+    },
+    {
+      "start_frame": 6585,
+      "end_frame": 6606,
+      "label": 2
+    },
+    {
+      "start_frame": 6607,
+      "end_frame": 9066,
+      "label": 1
+    }
+  ]
+}

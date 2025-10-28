@@ -1,0 +1,56 @@
+{
+  "video_path": "data/real/02_10/cctv2-Video-20250623_132003.mp4",
+  "roi": [
+    780,
+    0,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 3090,
+      "label": 2
+    },
+    {
+      "start_frame": 3091,
+      "end_frame": 3223,
+      "label": 1
+    },
+    {
+      "start_frame": 3224,
+      "end_frame": 3260,
+      "label": 2
+    },
+    {
+      "start_frame": 3261,
+      "end_frame": 6468,
+      "label": 1
+    },
+    {
+      "start_frame": 6469,
+      "end_frame": 6714,
+      "label": 2
+    },
+    {
+      "start_frame": 6715,
+      "end_frame": 6721,
+      "label": 1
+    },
+    {
+      "start_frame": 6722,
+      "end_frame": 6799,
+      "label": 2
+    },
+    {
+      "start_frame": 6800,
+      "end_frame": 7833,
+      "label": 1
+    }
+  ]
+}

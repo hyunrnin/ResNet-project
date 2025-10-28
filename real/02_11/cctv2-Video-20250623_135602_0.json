@@ -1,8 +1,8 @@
 {
-  "video_path": "data/real/02_10/cctv2-Video-20250623_140925.mp4",
+  "video_path": "data/real/02_11/cctv2-Video-20250623_135602.mp4",
   "roi": [
-    1000,
-    0,
+    1250,
+    330,
     128,
     128
   ],
@@ -14,17 +14,17 @@
   "segments": [
     {
       "start_frame": 0,
-      "end_frame": 5422,
+      "end_frame": 14084,
       "label": 1
     },
     {
-      "start_frame": 5423,
-      "end_frame": 5497,
+      "start_frame": 14085,
+      "end_frame": 14237,
       "label": 2
     },
     {
-      "start_frame": 5498,
-      "end_frame": 6094,
+      "start_frame": 14238,
+      "end_frame": 22304,
       "label": 1
     }
   ]

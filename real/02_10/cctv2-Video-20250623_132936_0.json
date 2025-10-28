@@ -1,0 +1,56 @@
+{
+  "video_path": "data/real/02_10/scctv2-Video-20250623_132936.mp4",
+  "roi": [
+    780,
+    0,
+    128,
+    128
+  ],
+  "label_map": {
+    "0": "False",
+    "1": "True",
+    "2": "Unknown"
+  },
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame": 1626,
+      "label": 0
+    },
+    {
+      "start_frame": 1627,
+      "end_frame": 1627,
+      "label": 1
+    },
+    {
+      "start_frame": 1628,
+      "end_frame": 1803,
+      "label": 0
+    },
+    {
+      "start_frame": 1804,
+      "end_frame": 3394,
+      "label": 1
+    },
+    {
+      "start_frame": 3395,
+      "end_frame": 3397,
+      "label": 2
+    },
+    {
+      "start_frame": 3398,
+      "end_frame": 5978,
+      "label": 1
+    },
+    {
+      "start_frame": 5979,
+      "end_frame": 5988,
+      "label": 2
+    },
+    {
+      "start_frame": 5989,
+      "end_frame": 16954,
+      "label": 1
+    }
+  ]
+}
