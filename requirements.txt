@@ -1,9 +1,8 @@
 numpy
 opencv-python
 pandas
-torch
-torhcvision
-PIL
+# torch
+# torhcvision
 tqdm
 scikit-learn
 matplotlib
